@@ -1,10 +1,10 @@
 # ABLB-IPF - Site Institucional
 
-Site institucional da Associação Brasileira de Levantamento de Peso - IPF (ABLB-IPF).
+Site institucional da Associação Brasiliense de Levantamentos Básicos - IPF (ABLB-IPF).
 
 ## 📋 Sobre
 
-Este é o site oficial da ABLB-IPF, desenvolvido para promover o powerlifting no Brasil. O site oferece informações sobre competições, resultados, records e contato da instituição.
+Este é o site oficial da ABLB-IPF, desenvolvido para promover os levantamentos básicos em Brasília. O site oferece informações sobre competições, resultados, records e contato da instituição.
 
 ## 🚀 Tecnologias
 
