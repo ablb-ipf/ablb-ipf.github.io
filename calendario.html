@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calendário de eventos e competições de powerlifting da ABLB-IPF.">
+    <title>Calendário - ABLB-IPF</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/material.css">
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" style="display: flex; align-items: center; gap: 1rem; text-decoration: none; color: white;">
+                    <img src="images/logo.jpeg" alt="Logo ABLB-IPF">
+                    <span style="font-size: 1.25rem; font-weight: 500;">ABLB-IPF</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="calendario.html">Calendário</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
+                <li><a href="records.html">Records</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="material-icons">menu</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Drawer Mobile -->
+    <div class="drawer-overlay"></div>
+    <div class="drawer">
+        <ul class="drawer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="calendario.html">Calendário</a></li>
+            <li><a href="resultados.html">Resultados</a></li>
+            <li><a href="records.html">Records</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <h1 style="margin-bottom: 2rem; text-align: center;">Calendário de Eventos</h1>
+
+        <!-- Filtros -->
+        <div class="filters">
+            <div class="filter-group">
+                <label for="filter-mes">Mês:</label>
+                <select id="filter-mes" class="form-group">
+                    <option value="">Todos</option>
+                    <option value="1">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-ano">Ano:</label>
+                <select id="filter-ano" class="form-group">
+                    <option value="">Todos</option>
+                    <option value="2026">2026</option>
+                    <option value="2025">2025</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-tipo">Tipo de Evento:</label>
+                <select id="filter-tipo" class="form-group">
+                    <option value="">Todos</option>
+                    <option value="Competição Nacional">Competição Nacional</option>
+                    <option value="Competição Regional">Competição Regional</option>
+                    <option value="Competição Estadual">Competição Estadual</option>
+                    <option value="Workshop">Workshop</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Lista de Eventos -->
+        <div id="eventos-container">
+            <div class="loading">Carregando eventos...</div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ABLB-IPF</h3>
+                <p>Associação Brasileira de Levantamento de Peso - IPF</p>
+                <p>Promovendo o powerlifting no Brasil</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <a href="index.html">Início</a>
+                <a href="calendario.html">Calendário</a>
+                <a href="resultados.html">Resultados</a>
+                <a href="records.html">Records</a>
+                <a href="quem-somos.html">Quem Somos</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <a href="mailto:ablb.ipf@gmail.com">ablb.ipf@gmail.com</a>
+                <a href="https://chat.whatsapp.com/EjbBq7V7ko6LXrsjMVvIH7" target="_blank">Grupo WhatsApp</a>
+                <a href="https://www.instagram.com/powerlifting_df/" target="_blank">@powerlifting_df</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ABLB-IPF. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/material.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

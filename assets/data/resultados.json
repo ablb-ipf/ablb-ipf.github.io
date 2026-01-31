@@ -1,0 +1,58 @@
+[
+  {
+    "nome": "Campeonato Brasileiro de Powerlifting 2025",
+    "data": "2025-10-15",
+    "local": "Rio de Janeiro, RJ",
+    "categoria": "Masculino",
+    "resultados": [
+      {
+        "atleta": "João Silva",
+        "categoria": "93kg",
+        "squat": 250,
+        "bench": 180,
+        "deadlift": 280,
+        "total": 710
+      },
+      {
+        "atleta": "Carlos Santos",
+        "categoria": "93kg",
+        "squat": 240,
+        "bench": 175,
+        "deadlift": 270,
+        "total": 685
+      },
+      {
+        "atleta": "Pedro Oliveira",
+        "categoria": "93kg",
+        "squat": 235,
+        "bench": 170,
+        "deadlift": 265,
+        "total": 670
+      }
+    ]
+  },
+  {
+    "nome": "Copa Regional Centro-Oeste 2025",
+    "data": "2025-08-20",
+    "local": "Brasília, DF",
+    "categoria": "Misto",
+    "resultados": [
+      {
+        "atleta": "Maria Costa",
+        "categoria": "63kg Feminino",
+        "squat": 150,
+        "bench": 90,
+        "deadlift": 170,
+        "total": 410
+      },
+      {
+        "atleta": "Ana Souza",
+        "categoria": "63kg Feminino",
+        "squat": 145,
+        "bench": 85,
+        "deadlift": 165,
+        "total": 395
+      }
+    ]
+  }
+]

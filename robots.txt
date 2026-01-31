@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ablb-ipf.github.io/sitemap.xml

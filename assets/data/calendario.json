@@ -1,0 +1,30 @@
+[
+  {
+    "titulo": "Campeonato Brasileiro de Powerlifting 2026",
+    "data": "2026-03-15",
+    "local": "São Paulo, SP",
+    "tipo": "Competição Nacional",
+    "descricao": "Principal competição nacional do ano. Inscrições abertas até 01/03/2026."
+  },
+  {
+    "titulo": "Copa Regional Centro-Oeste",
+    "data": "2026-04-20",
+    "local": "Brasília, DF",
+    "tipo": "Competição Regional",
+    "descricao": "Competição regional para atletas do Centro-Oeste."
+  },
+  {
+    "titulo": "Workshop de Técnica de Levantamento",
+    "data": "2026-02-10",
+    "local": "Online",
+    "tipo": "Workshop",
+    "descricao": "Workshop online sobre técnicas avançadas de squat, bench press e deadlift."
+  },
+  {
+    "titulo": "Campeonato Estadual DF 2026",
+    "data": "2026-05-05",
+    "local": "Brasília, DF",
+    "tipo": "Competição Estadual",
+    "descricao": "Campeonato estadual do Distrito Federal."
+  }
+]

@@ -1,0 +1,28 @@
+# Configuração do Jekyll para GitHub Pages
+title: ABLB-IPF
+description: Associação Brasileira de Levantamento de Peso - IPF
+url: https://ablb-ipf.github.io
+baseurl: ""
+
+# Configurações
+markdown: kramdown
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Excluir arquivos
+exclude:
+  - README.md
+  - PLANO.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Incluir arquivos estáticos
+include:
+  - assets
+  - images

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Associação Brasileira de Levantamento de Peso - IPF. Calendário de eventos, resultados de competições e records de powerlifting.">
+    <meta name="keywords" content="powerlifting, levantamento de peso, ABLB, IPF, competições, brasil">
+    <meta property="og:title" content="ABLB-IPF - Associação Brasileira de Levantamento de Peso">
+    <meta property="og:description" content="Calendário de eventos, resultados de competições e records de powerlifting no Brasil.">
+    <meta property="og:type" content="website">
+    <title>ABLB-IPF - Associação Brasileira de Levantamento de Peso</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/material.css">
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="images/logo.jpeg" alt="Logo ABLB-IPF">
+                <span style="font-size: 1.25rem; font-weight: 500;">ABLB-IPF</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="calendario.html">Calendário</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
+                <li><a href="records.html">Records</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="material-icons">menu</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Drawer Mobile -->
+    <div class="drawer-overlay"></div>
+    <div class="drawer">
+        <ul class="drawer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="calendario.html">Calendário</a></li>
+            <li><a href="resultados.html">Resultados</a></li>
+            <li><a href="records.html">Records</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/banner1campeonato.jpeg" alt="Banner de Campeonato">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>ABLB-IPF</h1>
+            <p>Associação Brasileira de Levantamento de Peso</p>
+            <p style="font-size: 1rem; margin-top: 1rem;">Promovendo o powerlifting no Brasil</p>
+        </div>
+    </section>
+
+    <!-- Cards de Resumo -->
+    <section class="container">
+        <div class="grid">
+            <div class="card">
+                <h2 class="card-title">
+                    <span class="material-icons" style="vertical-align: middle;">event</span>
+                    Calendário de Eventos
+                </h2>
+                <p>Confira todas as competições e eventos programados. Não perca nenhuma oportunidade de competir!</p>
+                <a href="calendario.html" class="btn btn-primary">Ver Calendário</a>
+            </div>
+
+            <div class="card">
+                <h2 class="card-title">
+                    <span class="material-icons" style="vertical-align: middle;">emoji_events</span>
+                    Resultados
+                </h2>
+                <p>Consulte os resultados de todas as competições realizadas. Veja as classificações completas.</p>
+                <a href="resultados.html" class="btn btn-primary">Ver Resultados</a>
+            </div>
+
+            <div class="card">
+                <h2 class="card-title">
+                    <span class="material-icons" style="vertical-align: middle;">stars</span>
+                    Records
+                </h2>
+                <p>Conheça os records da instituição. Veja os maiores levantamentos por categoria.</p>
+                <a href="records.html" class="btn btn-primary">Ver Records</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notícias/Eventos Recentes -->
+    <section class="container">
+        <h2 style="margin-bottom: 2rem; text-align: center;">Próximos Eventos</h2>
+        <div id="eventos-recentes" class="grid">
+            <!-- Carregado via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Links Rápidos -->
+    <section class="container" style="background: var(--surface); padding: 3rem 1rem; border-radius: 8px; margin: 3rem auto; max-width: 1200px;">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Links Rápidos</h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+            <a href="contato.html" class="btn btn-outlined" style="text-align: center;">
+                <span class="material-icons" style="display: block; margin-bottom: 0.5rem;">email</span>
+                Contato
+            </a>
+            <a href="https://chat.whatsapp.com/EjbBq7V7ko6LXrsjMVvIH7" target="_blank" class="btn btn-outlined" style="text-align: center;">
+                <span class="material-icons" style="display: block; margin-bottom: 0.5rem;">chat</span>
+                WhatsApp
+            </a>
+            <a href="https://www.instagram.com/powerlifting_df/" target="_blank" class="btn btn-outlined" style="text-align: center;">
+                <span class="material-icons" style="display: block; margin-bottom: 0.5rem;">photo_camera</span>
+                Instagram
+            </a>
+            <a href="quem-somos.html" class="btn btn-outlined" style="text-align: center;">
+                <span class="material-icons" style="display: block; margin-bottom: 0.5rem;">info</span>
+                Sobre Nós
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ABLB-IPF</h3>
+                <p>Associação Brasileira de Levantamento de Peso - IPF</p>
+                <p>Promovendo o powerlifting no Brasil</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <a href="index.html">Início</a>
+                <a href="calendario.html">Calendário</a>
+                <a href="resultados.html">Resultados</a>
+                <a href="records.html">Records</a>
+                <a href="quem-somos.html">Quem Somos</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <a href="mailto:ablb.ipf@gmail.com">ablb.ipf@gmail.com</a>
+                <a href="https://chat.whatsapp.com/EjbBq7V7ko6LXrsjMVvIH7" target="_blank">Grupo WhatsApp</a>
+                <a href="https://www.instagram.com/powerlifting_df/" target="_blank">@powerlifting_df</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ABLB-IPF. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/material.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Carregar eventos recentes na página inicial
+        async function loadEventosRecentes() {
+            try {
+                const response = await fetch('assets/data/calendario.json');
+                const eventos = await response.json();
+                const container = document.getElementById('eventos-recentes');
+                
+                // Mostrar apenas os próximos 3 eventos
+                const proximos = eventos
+                    .filter(e => new Date(e.data) >= new Date())
+                    .sort((a, b) => new Date(a.data) - new Date(b.data))
+                    .slice(0, 3);
+                
+                if (proximos.length === 0) {
+                    container.innerHTML = '<p style="text-align: center; grid-column: 1/-1;">Nenhum evento próximo programado.</p>';
+                    return;
+                }
+                
+                container.innerHTML = proximos.map(evento => `
+                    <div class="card fade-in">
+                        <h3 class="card-title">${evento.titulo}</h3>
+                        <p><strong>Data:</strong> ${new Date(evento.data).toLocaleDateString('pt-BR')}</p>
+                        <p><strong>Local:</strong> ${evento.local}</p>
+                        <p><strong>Tipo:</strong> ${evento.tipo}</p>
+                        <a href="calendario.html" class="btn btn-primary" style="margin-top: 1rem;">Ver Detalhes</a>
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.error('Erro ao carregar eventos:', error);
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', loadEventosRecentes);
+    </script>
+</body>
+</html>

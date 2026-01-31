@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Records de powerlifting da ABLB-IPF por categoria e exercício.">
+    <title>Records - ABLB-IPF</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/material.css">
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" style="display: flex; align-items: center; gap: 1rem; text-decoration: none; color: white;">
+                    <img src="images/logo.jpeg" alt="Logo ABLB-IPF">
+                    <span style="font-size: 1.25rem; font-weight: 500;">ABLB-IPF</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="calendario.html">Calendário</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
+                <li><a href="records.html">Records</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="material-icons">menu</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Drawer Mobile -->
+    <div class="drawer-overlay"></div>
+    <div class="drawer">
+        <ul class="drawer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="calendario.html">Calendário</a></li>
+            <li><a href="resultados.html">Resultados</a></li>
+            <li><a href="records.html">Records</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <h1 style="margin-bottom: 2rem; text-align: center;">Records da Instituição</h1>
+
+        <!-- Filtros -->
+        <div class="filters">
+            <div class="filter-group">
+                <label for="filter-categoria">Categoria:</label>
+                <select id="filter-categoria" class="form-group">
+                    <option value="">Todas</option>
+                    <option value="Masculino - 93kg">Masculino - 93kg</option>
+                    <option value="Feminino - 63kg">Feminino - 63kg</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-exercicio">Exercício:</label>
+                <select id="filter-exercicio" class="form-group">
+                    <option value="">Todos</option>
+                    <option value="Squat">Squat</option>
+                    <option value="Bench">Bench Press</option>
+                    <option value="Deadlift">Deadlift</option>
+                    <option value="Total">Total</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Lista de Records -->
+        <div id="records-container">
+            <div class="loading">Carregando records...</div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ABLB-IPF</h3>
+                <p>Associação Brasileira de Levantamento de Peso - IPF</p>
+                <p>Promovendo o powerlifting no Brasil</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <a href="index.html">Início</a>
+                <a href="calendario.html">Calendário</a>
+                <a href="resultados.html">Resultados</a>
+                <a href="records.html">Records</a>
+                <a href="quem-somos.html">Quem Somos</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <a href="mailto:ablb.ipf@gmail.com">ablb.ipf@gmail.com</a>
+                <a href="https://chat.whatsapp.com/EjbBq7V7ko6LXrsjMVvIH7" target="_blank">Grupo WhatsApp</a>
+                <a href="https://www.instagram.com/powerlifting_df/" target="_blank">@powerlifting_df</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ABLB-IPF. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/material.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

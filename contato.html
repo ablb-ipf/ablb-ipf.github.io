@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a ABLB-IPF através do formulário ou redes sociais.">
+    <title>Contato - ABLB-IPF</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/material.css">
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" style="display: flex; align-items: center; gap: 1rem; text-decoration: none; color: white;">
+                    <img src="images/logo.jpeg" alt="Logo ABLB-IPF">
+                    <span style="font-size: 1.25rem; font-weight: 500;">ABLB-IPF</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="calendario.html">Calendário</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
+                <li><a href="records.html">Records</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="material-icons">menu</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Drawer Mobile -->
+    <div class="drawer-overlay"></div>
+    <div class="drawer">
+        <ul class="drawer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="calendario.html">Calendário</a></li>
+            <li><a href="resultados.html">Resultados</a></li>
+            <li><a href="records.html">Records</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <h1 style="margin-bottom: 2rem; text-align: center;">Entre em Contato</h1>
+
+        <div class="grid">
+            <!-- Formulário de Contato -->
+            <div class="card">
+                <h2 class="card-title">
+                    <span class="material-icons" style="vertical-align: middle;">email</span>
+                    Envie uma Mensagem
+                </h2>
+                <form id="contato-form">
+                    <div class="form-group">
+                        <label for="nome">Nome *</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto *</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="geral">Informações Gerais</option>
+                            <option value="competicao">Competições</option>
+                            <option value="inscricao">Inscrições</option>
+                            <option value="parceria">Parcerias</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <!-- Informações de Contato -->
+            <div class="card">
+                <h2 class="card-title">
+                    <span class="material-icons" style="vertical-align: middle;">contact_mail</span>
+                    Informações de Contato
+                </h2>
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--primary-color);">
+                        <span class="material-icons" style="vertical-align: middle;">email</span>
+                        Email
+                    </h3>
+                    <p>
+                        <a href="mailto:ablb.ipf@gmail.com" style="color: var(--primary-color); text-decoration: none;">
+                            ablb.ipf@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--primary-color);">
+                        <span class="material-icons" style="vertical-align: middle;">chat</span>
+                        WhatsApp
+                    </h3>
+                    <p>
+                        <a href="https://chat.whatsapp.com/EjbBq7V7ko6LXrsjMVvIH7" target="_blank" class="btn btn-primary" style="display: inline-block;">
+                            Entrar no Grupo
+                        </a>
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--primary-color);">
+                        <span class="material-icons" style="vertical-align: middle;">photo_camera</span>
+                        Instagram
+                    </h3>
+                    <p>
+                        <a href="https://www.instagram.com/powerlifting_df/" target="_blank" class="btn btn-secondary" style="display: inline-block;">
+                            @powerlifting_df
+                        </a>
+                    </p>
+                </div>
+
+                <div class="social-links" style="margin-top: 2rem;">
+                    <a href="mailto:ablb.ipf@gmail.com" aria-label="Email">
+                        <span class="material-icons">email</span>
+                    </a>
+                    <a href="https://chat.whatsapp.com/EjbBq7V7ko6LXrsjMVvIH7" target="_blank" aria-label="WhatsApp">
+                        <span class="material-icons">chat</span>
+                    </a>
+                    <a href="https://www.instagram.com/powerlifting_df/" target="_blank" aria-label="Instagram">
+                        <span class="material-icons">photo_camera</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ABLB-IPF</h3>
+                <p>Associação Brasileira de Levantamento de Peso - IPF</p>
+                <p>Promovendo o powerlifting no Brasil</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <a href="index.html">Início</a>
+                <a href="calendario.html">Calendário</a>
+                <a href="resultados.html">Resultados</a>
+                <a href="records.html">Records</a>
+                <a href="quem-somos.html">Quem Somos</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <a href="mailto:ablb.ipf@gmail.com">ablb.ipf@gmail.com</a>
+                <a href="https://chat.whatsapp.com/EjbBq7V7ko6LXrsjMVvIH7" target="_blank">Grupo WhatsApp</a>
+                <a href="https://www.instagram.com/powerlifting_df/" target="_blank">@powerlifting_df</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ABLB-IPF. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/material.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
