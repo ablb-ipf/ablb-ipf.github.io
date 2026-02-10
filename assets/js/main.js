@@ -215,7 +215,8 @@ function renderResultados(resultados) {
             <h3 class="card-title">${competicao.nome}</h3>
             <p><strong>Data:</strong> ${formatDate(competicao.data)}</p>
             <p><strong>Local:</strong> ${competicao.local}</p>
-            ${renderTabelaResultados(competicao.resultados)}
+            ${competicao.resultadosFeminino && competicao.resultadosFeminino.length > 0 ? `<h4 class="resultados-subtitle">Feminino</h4>${renderTabelaResultados(competicao.resultadosFeminino)}` : ''}
+            ${competicao.resultadosMasculino && competicao.resultadosMasculino.length > 0 ? `<h4 class="resultados-subtitle">Masculino</h4>${renderTabelaResultados(competicao.resultadosMasculino)}` : ''}
         </div>
     `).join('');
 }
@@ -275,6 +276,7 @@ function renderTabelaResultados(resultados) {
                         <th>Bench</th>
                         <th>Deadlift</th>
                         <th>Total</th>
+                        <th>Pontos</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -283,10 +285,11 @@ function renderTabelaResultados(resultados) {
                             <td>${i + 1}º</td>
                             <td>${r.atleta}</td>
                             <td>${r.categoria}</td>
-                            <td>${r.squat || '-'} kg</td>
-                            <td>${r.bench || '-'} kg</td>
-                            <td>${r.deadlift || '-'} kg</td>
+                            <td>${r.squat != null ? r.squat + ' kg' : '-'}</td>
+                            <td>${r.bench != null ? r.bench + ' kg' : '-'}</td>
+                            <td>${r.deadlift != null ? r.deadlift + ' kg' : '-'}</td>
                             <td><strong>${r.total != null ? r.total + ' kg' : '-'}</strong></td>
+                            <td>${r.pontos != null ? r.pontos : '-'}</td>
                         </tr>
                     `).join('')}
                 </tbody>
@@ -319,14 +322,18 @@ function applyResultadosFilters() {
     const categoriaFilter = document.getElementById('filter-categoria')?.value;
     const searchTerm = document.getElementById('search-atleta')?.value.toLowerCase() || '';
 
+    const allResultados = (comp) => [
+        ...(comp.resultadosMasculino || []),
+        ...(comp.resultadosFeminino || []),
+    ];
     let filtered = resultadosData.filter(comp => {
         const compDate = new Date(comp.data);
         const matchAno = !anoFilter || compDate.getFullYear() === parseInt(anoFilter);
         const matchCategoria = !categoriaFilter || comp.categoria === categoriaFilter;
-        const matchSearch = !searchTerm || comp.resultados.some(r => 
+        const matchSearch = !searchTerm || allResultados(comp).some(r =>
             r.atleta.toLowerCase().includes(searchTerm)
         );
-        
+
         return matchAno && matchCategoria && matchSearch;
     });
 

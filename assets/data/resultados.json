@@ -4,14 +4,15 @@
     "data": "2025-12-21",
     "local": "Brasília, Distrito Federal",
     "categoria": "Misto",
-    "resultados": [
+    "resultadosMasculino": [
       {
-        "atleta": "Lucas Alexandre A. Dos Santos",
-        "categoria": "105+ Open",
-        "squat": 260,
-        "bench": 130,
-        "deadlift": 277.5,
-        "total": 667.5
+        "atleta": "Fabricio Alves Cardoso",
+        "categoria": "66 Sbjr",
+        "squat": 180.5,
+        "bench": 110,
+        "deadlift": 262.5,
+        "total": 553,
+        "pontos": 86.69
       },
       {
         "atleta": "Kaio Quaresma Sena",
@@ -19,39 +20,8 @@
         "squat": 217.5,
         "bench": 132.5,
         "deadlift": 250,
-        "total": 600
-      },
-      {
-        "atleta": "Pedro Vitor Rodrigues De Oliveira",
-        "categoria": "83 Jr",
-        "squat": 205,
-        "bench": 100,
-        "deadlift": 260,
-        "total": 565
-      },
-      {
-        "atleta": "Felipe De Melo",
-        "categoria": "83 Sbjr",
-        "squat": 212.5,
-        "bench": 117.5,
-        "deadlift": 230,
-        "total": 560
-      },
-      {
-        "atleta": "Fabricio Alves Cardoso",
-        "categoria": "66 Sbjr",
-        "squat": 180.5,
-        "bench": 110,
-        "deadlift": 262.5,
-        "total": 553
-      },
-      {
-        "atleta": "Daniel Barboza Da Silva",
-        "categoria": "105 Open",
-        "squat": 200,
-        "bench": 112.5,
-        "deadlift": 240,
-        "total": 552.5
+        "total": 600,
+        "pontos": 83.64
       },
       {
         "atleta": "Anthony Rocha Lima",
@@ -59,23 +29,35 @@
         "squat": 197.5,
         "bench": 120,
         "deadlift": 227.5,
-        "total": 545
+        "total": 545,
+        "pontos": 81.46
       },
       {
-        "atleta": "Felipe Renato Alvarenga Batalha",
-        "categoria": "93 Open",
-        "squat": 180,
-        "bench": 135,
-        "deadlift": 222.5,
-        "total": 537.5
-      },
-      {
-        "atleta": "Enzo Yoshio",
-        "categoria": "93 Open",
-        "squat": 170,
-        "bench": 115,
+        "atleta": "Felipe De Melo",
+        "categoria": "83 Sbjr",
+        "squat": 212.5,
+        "bench": 117.5,
         "deadlift": 230,
-        "total": 515
+        "total": 560,
+        "pontos": 81.36
+      },
+      {
+        "atleta": "Pedro Vitor Rodrigues De Oliveira",
+        "categoria": "83 Jr",
+        "squat": 205,
+        "bench": 100,
+        "deadlift": 260,
+        "total": 565,
+        "pontos": 80.94
+      },
+      {
+        "atleta": "Lucas Alexandre A. Dos Santos",
+        "categoria": "105+ Open",
+        "squat": 260,
+        "bench": 130,
+        "deadlift": 277.5,
+        "total": 667.5,
+        "pontos": 79.03
       },
       {
         "atleta": "Josue Arthur Soares De Azevedo Maia",
@@ -83,7 +65,8 @@
         "squat": 185,
         "bench": 130,
         "deadlift": 195,
-        "total": 510
+        "total": 510,
+        "pontos": 73.6
       },
       {
         "atleta": "Ian Lucas Cordeiro Gonçalves",
@@ -91,7 +74,26 @@
         "squat": 175,
         "bench": 122.5,
         "deadlift": 210,
-        "total": 507.5
+        "total": 507.5,
+        "pontos": 71.17
+      },
+      {
+        "atleta": "Felipe Renato Alvarenga Batalha",
+        "categoria": "93 Open",
+        "squat": 180,
+        "bench": 135,
+        "deadlift": 222.5,
+        "total": 537.5,
+        "pontos": 70.39
+      },
+      {
+        "atleta": "Daniel Barboza Da Silva",
+        "categoria": "105 Open",
+        "squat": 200,
+        "bench": 112.5,
+        "deadlift": 240,
+        "total": 552.5,
+        "pontos": 69.47
       },
       {
         "atleta": "Andre Luis Do Nascimento Araujo",
@@ -99,15 +101,17 @@
         "squat": 165,
         "bench": 102.5,
         "deadlift": 192.5,
-        "total": 460
+        "total": 460,
+        "pontos": 68.26
       },
       {
-        "atleta": "Joao Pedro Ramalho",
-        "categoria": "83 Jr",
-        "squat": 160,
-        "bench": 92.5,
-        "deadlift": 205,
-        "total": 457.5
+        "atleta": "Enzo Yoshio",
+        "categoria": "93 Open",
+        "squat": 170,
+        "bench": 115,
+        "deadlift": 230,
+        "total": 515,
+        "pontos": 67.77
       },
       {
         "atleta": "Joao Vitor Duarth",
@@ -115,15 +119,17 @@
         "squat": 157.5,
         "bench": 77.5,
         "deadlift": 215,
-        "total": 450
+        "total": 450,
+        "pontos": 66.2
       },
       {
-        "atleta": "Saulo Ramos Rocha Lima",
-        "categoria": "83 Sbjr",
-        "squat": 167.5,
-        "bench": 100,
-        "deadlift": 180,
-        "total": 447.5
+        "atleta": "Joao Pedro Ramalho",
+        "categoria": "83 Jr",
+        "squat": 160,
+        "bench": 92.5,
+        "deadlift": 205,
+        "total": 457.5,
+        "pontos": 65.15
       },
       {
         "atleta": "Gabriel Paiva Dias Lacerda",
@@ -131,15 +137,8 @@
         "squat": 140,
         "bench": 115,
         "deadlift": 180,
-        "total": 435
-      },
-      {
-        "atleta": "Pedro Henrique Gonçalves Lacerda",
-        "categoria": "105+ Open",
-        "squat": 135,
-        "bench": 110,
-        "deadlift": 170,
-        "total": 415
+        "total": 435,
+        "pontos": 64.45
       },
       {
         "atleta": "Igor Siqueira Rios",
@@ -147,31 +146,17 @@
         "squat": 140,
         "bench": 80,
         "deadlift": 180,
-        "total": 400
+        "total": 400,
+        "pontos": 63.64
       },
       {
-        "atleta": "Marco Antonio",
-        "categoria": "74 Open",
-        "squat": 140,
-        "bench": 90,
-        "deadlift": 165,
-        "total": 395
-      },
-      {
-        "atleta": "Pedro Lucas Pontes Corte",
+        "atleta": "Saulo Ramos Rocha Lima",
         "categoria": "83 Sbjr",
-        "squat": 135,
-        "bench": 80,
-        "deadlift": 165,
-        "total": 380
-      },
-      {
-        "atleta": "Amanda Mayara Ferreira Martins",
-        "categoria": "63 Sbjr",
-        "squat": 140,
-        "bench": 77.5,
-        "deadlift": 150,
-        "total": 367.5
+        "squat": 167.5,
+        "bench": 100,
+        "deadlift": 180,
+        "total": 447.5,
+        "pontos": 63.46
       },
       {
         "atleta": "Diego De Oliveira Ferreira Filho",
@@ -179,63 +164,35 @@
         "squat": 120,
         "bench": 82.5,
         "deadlift": 155,
-        "total": 357.5
+        "total": 357.5,
+        "pontos": 62.22
       },
       {
-        "atleta": "Elaine Barbosa",
-        "categoria": "63 Open",
-        "squat": 122.5,
-        "bench": 65,
-        "deadlift": 162.5,
-        "total": 350
+        "atleta": "Marco Antonio",
+        "categoria": "74 Open",
+        "squat": 140,
+        "bench": 90,
+        "deadlift": 165,
+        "total": 395,
+        "pontos": 58.24
       },
       {
-        "atleta": "Mayara Lima Da Silva",
-        "categoria": "52 Jr",
-        "squat": 110,
-        "bench": 65,
-        "deadlift": 140,
-        "total": 315
+        "atleta": "Pedro Lucas Pontes Corte",
+        "categoria": "83 Sbjr",
+        "squat": 135,
+        "bench": 80,
+        "deadlift": 165,
+        "total": 380,
+        "pontos": 54.47
       },
       {
-        "atleta": "Hiany Costa Martins",
-        "categoria": "63 Jr",
-        "squat": 107.5,
-        "bench": 55,
-        "deadlift": 145,
-        "total": 307.5
-      },
-      {
-        "atleta": "Maria Luiza Melo Lopes",
-        "categoria": "76 Sbjr",
-        "squat": 112.5,
-        "bench": 45,
-        "deadlift": 142.5,
-        "total": 300
-      },
-      {
-        "atleta": "Isadora Barretos",
-        "categoria": "85 Jr",
-        "squat": 107.5,
-        "bench": 42.5,
-        "deadlift": 125,
-        "total": 275
-      },
-      {
-        "atleta": "Larissa Amaral",
-        "categoria": "63 Open",
-        "squat": 95,
-        "bench": 47.5,
-        "deadlift": 110,
-        "total": 252.5
-      },
-      {
-        "atleta": "Alice Avelino",
-        "categoria": "85+ Open",
-        "squat": 80,
-        "bench": 45,
-        "deadlift": 115,
-        "total": 240
+        "atleta": "Pedro Henrique Gonçalves Lacerda",
+        "categoria": "105+ Open",
+        "squat": 135,
+        "bench": 110,
+        "deadlift": 170,
+        "total": 415,
+        "pontos": 47.24
       },
       {
         "atleta": "Juan Ferreira Da Silva",
@@ -243,7 +200,8 @@
         "squat": 220,
         "bench": 135,
         "deadlift": null,
-        "total": null
+        "total": null,
+        "pontos": null
       },
       {
         "atleta": "Gabriel Lorran Veloso",
@@ -251,7 +209,8 @@
         "squat": 210,
         "bench": null,
         "deadlift": 215,
-        "total": null
+        "total": null,
+        "pontos": null
       },
       {
         "atleta": "Peniel Henrique Do Carmo",
@@ -259,7 +218,8 @@
         "squat": null,
         "bench": 100,
         "deadlift": 150,
-        "total": null
+        "total": null,
+        "pontos": null
       },
       {
         "atleta": "Elizeu Fabricio Lopes",
@@ -267,7 +227,82 @@
         "squat": 160,
         "bench": 105,
         "deadlift": null,
-        "total": null
+        "total": null,
+        "pontos": null
+      }
+    ],
+    "resultadosFeminino": [
+      {
+        "atleta": "Amanda Mayara Ferreira Martins",
+        "categoria": "63 Sbjr",
+        "squat": 140,
+        "bench": 77.5,
+        "deadlift": 150,
+        "total": 367.5,
+        "pontos": 82.13
+      },
+      {
+        "atleta": "Mayara Lima Da Silva",
+        "categoria": "52 Jr",
+        "squat": 110,
+        "bench": 65,
+        "deadlift": 140,
+        "total": 315,
+        "pontos": 79.54
+      },
+      {
+        "atleta": "Elaine Barbosa",
+        "categoria": "63 Open",
+        "squat": 122.5,
+        "bench": 65,
+        "deadlift": 162.5,
+        "total": 350,
+        "pontos": 78.22
+      },
+      {
+        "atleta": "Hiany Costa Martins",
+        "categoria": "63 Jr",
+        "squat": 107.5,
+        "bench": 55,
+        "deadlift": 145,
+        "total": 307.5,
+        "pontos": 69.51
+      },
+      {
+        "atleta": "Maria Luiza Melo Lopes",
+        "categoria": "76 Sbjr",
+        "squat": 112.5,
+        "bench": 45,
+        "deadlift": 142.5,
+        "total": 300,
+        "pontos": 60.75
+      },
+      {
+        "atleta": "Larissa Amaral",
+        "categoria": "63 Open",
+        "squat": 95,
+        "bench": 47.5,
+        "deadlift": 110,
+        "total": 252.5,
+        "pontos": 57.08
+      },
+      {
+        "atleta": "Isadora Barretos",
+        "categoria": "85 Jr",
+        "squat": 107.5,
+        "bench": 42.5,
+        "deadlift": 125,
+        "total": 275,
+        "pontos": 51.7
+      },
+      {
+        "atleta": "Alice Avelino",
+        "categoria": "85+ Open",
+        "squat": 80,
+        "bench": 45,
+        "deadlift": 115,
+        "total": 240,
+        "pontos": 41.14
       }
     ]
   }

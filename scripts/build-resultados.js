@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
  * Build assets/data/resultados.json from OPL-format CSV files in assets/resultados csv/
- * Expected JSON: array of { nome, data, local, categoria, resultados: [{ atleta, categoria, squat, bench, deadlift, total }] }
+ * Output: array of { nome, data, local, categoria, resultadosMasculino, resultadosFeminino }
+ * Each resultados array: [{ atleta, categoria, squat, bench, deadlift, total, pontos }] sorted by points desc.
  */
 
 const fs = require('fs');
@@ -65,20 +66,26 @@ function parseOplCsv(filePath) {
   const bestBenchIdx = colHeader.indexOf('Best3BenchKg');
   const bestDeadliftIdx = colHeader.indexOf('Best3DeadliftKg');
   const totalIdx = colHeader.indexOf('TotalKg');
+  const pointsIdx = colHeader.indexOf('Points');
 
-  const resultados = [];
-  const seenNames = new Set();
+  const resultadosMasculino = [];
+  const resultadosFeminino = [];
 
   for (let i = 6; i < lines.length; i++) {
     const row = parseCSVLine(lines[i]);
-    if (row.length <= Math.max(nameIdx, totalIdx)) continue;
+    const maxIdx = Math.max(nameIdx, totalIdx, pointsIdx);
+    if (row.length <= maxIdx) continue;
 
     const name = (row[nameIdx] || '').trim();
     if (!name) continue;
 
+    const sex = (row[sexIdx] || '').toUpperCase();
     const totalKgRaw = row[totalIdx];
     const totalKg = totalKgRaw !== '' && totalKgRaw != null ? parseFloat(totalKgRaw) : NaN;
     const hasValidTotal = !isNaN(totalKg) && totalKg > 0;
+    const pointsRaw = row[pointsIdx];
+    const pontos = pointsRaw !== '' && pointsRaw != null ? parseFloat(pointsRaw) : null;
+    const hasValidPoints = pontos != null && !isNaN(pontos);
 
     const division = row[divisionIdx] || '';
     const weightClass = row[weightClassIdx] || '';
@@ -87,41 +94,47 @@ function parseOplCsv(filePath) {
     const bench = parseFloat(row[bestBenchIdx]);
     const deadlift = parseFloat(row[bestDeadliftIdx]);
 
-    resultados.push({
+    const entry = {
       atleta: titleCase(name),
       categoria: categoria.trim() || '-',
       squat: !isNaN(squat) && squat > 0 ? squat : null,
       bench: !isNaN(bench) && bench > 0 ? bench : null,
       deadlift: !isNaN(deadlift) && deadlift > 0 ? deadlift : null,
       total: hasValidTotal ? totalKg : null,
+      pontos: hasValidPoints ? pontos : null,
+    };
+
+    if (sex === 'F') {
+      resultadosFeminino.push(entry);
+    } else {
+      resultadosMasculino.push(entry);
+    }
+  }
+
+  // Sort each by points descending (null points at the end)
+  function sortByPoints(arr) {
+    arr.sort((a, b) => {
+      if (a.pontos == null && b.pontos == null) return 0;
+      if (a.pontos == null) return 1;
+      if (b.pontos == null) return -1;
+      return b.pontos - a.pontos;
     });
   }
-
-  // Sort by total descending (null totals at the end)
-  resultados.sort((a, b) => {
-    if (a.total == null && b.total == null) return 0;
-    if (a.total == null) return 1;
-    if (b.total == null) return -1;
-    return b.total - a.total;
-  });
+  sortByPoints(resultadosMasculino);
+  sortByPoints(resultadosFeminino);
 
   // Determine competition category for filter: Masculino, Feminino, Misto
-  const sexes = new Set();
-  for (let i = 6; i < lines.length; i++) {
-    const row = parseCSVLine(lines[i]);
-    if (row[sexIdx]) sexes.add(row[sexIdx].toUpperCase());
-  }
   let compCategoria = 'Misto';
-  if (sexes.size === 1) {
-    compCategoria = sexes.has('M') ? 'Masculino' : sexes.has('F') ? 'Feminino' : 'Misto';
-  }
+  if (resultadosMasculino.length > 0 && resultadosFeminino.length === 0) compCategoria = 'Masculino';
+  else if (resultadosFeminino.length > 0 && resultadosMasculino.length === 0) compCategoria = 'Feminino';
 
   return {
     nome: meetName,
     data: date,
     local: local || 'Brasília',
     categoria: compCategoria,
-    resultados,
+    resultadosMasculino,
+    resultadosFeminino,
   };
 }
 
@@ -132,7 +145,8 @@ function main() {
   for (const file of files) {
     const filePath = path.join(CSV_DIR, file);
     const comp = parseOplCsv(filePath);
-    if (comp && comp.resultados.length > 0) {
+    const hasResults = comp && (comp.resultadosMasculino.length > 0 || comp.resultadosFeminino.length > 0);
+    if (hasResults) {
       comps.push(comp);
     }
   }

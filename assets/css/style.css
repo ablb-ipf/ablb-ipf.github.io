@@ -243,6 +243,17 @@ nav {
     color: var(--primary-color);
 }
 
+.resultados-subtitle {
+    font-size: 1.15rem;
+    margin: 1.5rem 0 0.75rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.resultados-subtitle:first-of-type {
+    margin-top: 0.5rem;
+}
+
 /* Grid */
 .grid {
     display: grid;
