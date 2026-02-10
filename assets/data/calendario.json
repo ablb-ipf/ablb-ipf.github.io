@@ -1,38 +1,36 @@
-[
-    {
-      "titulo": "Desafio de Supino ABLB 2026",
-      "data": "2026-03 (TBC)",
-      "local": "Distrito Federal (DF)",
-      "tipo": "Desafio",
-      "descricao": "Evento de desafio focado na modalidade de supino, organizado pela ABLB."
-    },
-    {
-      "titulo": "Desafio de Terra ABLB 2026",
-      "data": "2026-04 (TBC)",
-      "local": "Distrito Federal (DF)",
-      "tipo": "Desafio",
-      "descricao": "Desafio oficial da ABLB com foco no levantamento terra."
-    },
-    {
-      "titulo": "Copa DF de Powerlifting 2026",
-      "data": "2026-07 (TBC)",
-      "local": "Distrito Federal (DF)",
-      "tipo": "Competição Regional",
-      "descricao": "Competição regional de powerlifting válida como Copa do Distrito Federal."
-    },
-    {
-      "titulo": "Distrital de Powerlifting e Supino 2026",
-      "data": "2026-10 (TBC)",
-      "local": "Distrito Federal (DF)",
-      "tipo": "Competição Distrital",
-      "descricao": "Campeonato distrital contemplando powerlifting completo e supino."
-    },
-    {
-      "titulo": "Dog Cup ABLB 2026",
-      "data": "2026-12 (TBC)",
-      "local": "Distrito Federal (DF)",
-      "tipo": "Competição",
-      "descricao": "Competição de encerramento do calendário anual da ABLB."
-    }
-  ]
-  
+[{
+    "titulo": "Desafio de Supino ABLB 2026",
+    "data": "2026-04-26 (TBC)",
+    "local": "Distrito Federal (DF)",
+    "tipo": "Desafio",
+    "descricao": "Evento de desafio focado na modalidade de supino, organizado pela ABLB."
+  },
+  {
+    "titulo": "Desafio de Terra ABLB 2026",
+    "data": "2026-04 (TBC)",
+    "local": "Distrito Federal (DF)",
+    "tipo": "Desafio",
+    "descricao": "Desafio oficial da ABLB com foco no levantamento terra."
+  },
+  {
+    "titulo": "Copa DF de Powerlifting 2026",
+    "data": "2026-07 (TBC)",
+    "local": "Distrito Federal (DF)",
+    "tipo": "Competição Regional",
+    "descricao": "Competição regional de powerlifting válida como Copa do Distrito Federal."
+  },
+  {
+    "titulo": "Distrital de Powerlifting e Supino 2026",
+    "data": "2026-10 (TBC)",
+    "local": "Distrito Federal (DF)",
+    "tipo": "Competição Distrital",
+    "descricao": "Campeonato distrital contemplando powerlifting completo e supino."
+  },
+  {
+    "titulo": "BSB Cup ABLB 2026",
+    "data": "2026-12 (TBC)",
+    "local": "Distrito Federal (DF)",
+    "tipo": "Competição",
+    "descricao": "Competição de encerramento do calendário anual da ABLB."
+  }
+]
